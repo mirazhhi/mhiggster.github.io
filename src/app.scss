@@ -1,2 +1,15 @@
 // Bulma
 @import "~bulma/bulma.sass";
+
+a {
+    text-decoration: underline;
+    text-decoration-color: #209cee !important;
+    text-shadow: 0 0 2px rgba(0, 0, 3, .2);
+}
+
+.links {
+    margin-left: 10px;
+    &:first-child {
+        margin-left: 0;
+    }
+}

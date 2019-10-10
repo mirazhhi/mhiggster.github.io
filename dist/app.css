@@ -11717,3 +11717,18 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #209cee !important;
+          text-decoration-color: #209cee !important;
+  text-shadow: 0 0 2px rgba(0, 0, 3, 0.2);
+}
+
+.links {
+  margin-left: 10px;
+}
+
+.links:first-child {
+  margin-left: 0;
+}
+

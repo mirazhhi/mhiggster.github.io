@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\ььььь\Desktop\port\src\app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! C:\Users\ььььь\Desktop\port\src\app.scss */"./src/app.scss");
+__webpack_require__(/*! /home/mhiggster/project/protfolio/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /home/mhiggster/project/protfolio/src/app.scss */"./src/app.scss");
 
 
 /***/ })
