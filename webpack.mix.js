@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/app.js', 'dist/').sass('src/app.scss', 'dist/').setPublicPath('dist').version();
+mix.js('src/app.js', 'dist/js/').sass('src/app.scss', 'dist/css').setPublicPath('dist').version();
 
 mix.browserSync({
     proxy: false,

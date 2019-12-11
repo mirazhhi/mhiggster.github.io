@@ -1443,8 +1443,8 @@ animejs__WEBPACK_IMPORTED_MODULE_0__["default"].timeline({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/mirazhhi/projects/mhiggster.github.io/src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! /home/mirazhhi/projects/mhiggster.github.io/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /home/mhiggster/project/protfolio/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /home/mhiggster/project/protfolio/src/app.scss */"./src/app.scss");
 
 
 /***/ })
