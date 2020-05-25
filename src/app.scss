@@ -1,6 +1,11 @@
 // Bulma
 @import "~bulma/bulma.sass";
 
+$night: #171C28;
+$day: #fff;
+$nightBtn: #fff;
+$dayBtn: #5628EE;
+
 a {
     text-decoration: underline;
     text-decoration-color: #209cee !important;
@@ -16,4 +21,11 @@ a {
 
 .image {
   margin: 0 auto;
+}
+
+.background-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
