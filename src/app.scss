@@ -6,10 +6,11 @@ $day: #fff;
 $nightBtn: #fff;
 $dayBtn: #5628EE;
 
-a {
-    text-decoration: underline;
-    text-decoration-color: #209cee !important;
-    text-shadow: 0 0 2px rgba(0, 0, 3, .2);
+a.simple_link {
+    // text-decoration: underline;
+    border-bottom: 1.5px #209cee solid;
+    // text-decoration-color: #209cee !important;
+    // text-shadow: 0 0 2px rgba(0, 0, 3, .2);
 }
 
 .links {
