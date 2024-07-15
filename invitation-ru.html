@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&D invitation | Created by Miras production</title>
+  <link rel="stylesheet" href="invite.css">
+
+
+<body>
+    <header>
+      <a href="#" class="logo">M&D invitation</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Интро</a></li>
+        <li><a href="#about" onclick="toggleMenu();">О нас</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Заявка</a></li>
+        <li><a href="#services" onclick="toggleMenu();">WIP</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="home">
+      <div class="textBx">
+        <h2>Привет, мы <br><span>M&D Мирас и Дарига</span></h2>
+        <h3>Хотим пригласить вам на кудалык</h3>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>Кто мы?</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>Мы - Иновация</h3>
+          <p>
+            <strong>Мирас</strong>, жених из Талдыкоргана, любит вкусно поесть, побросать мяч в баскетболе и эстетично пить кофе на альтернативном молоке.
+            По характеру - душнила, по званию айтишник, или, как в простонароде говорят ласково, <strong>"Software Engineer".</strong>
+            Душа компании, легкий, открытый, адектваный. 
+            </p>
+            <br>
+            <p><strong>Дарига</strong> - невеста из Караганды, чей острый ум и проницательность сочетаются с отменным чувством юмора. Она всегда в курсе модных тенденций и разбирается в брендах, но при этом не чужда эстетики и делает все с душой. Очаровательная не только внешне, но и внутренне, Дарига способна составить конкуренцию даже богине красоты. А еще она мастерски готовит плов и самсу, от которых невозможно оторваться!
+            <br><br></p>
+        </div>
+        <div class="w50">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/img1.jpg" class="img">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="heading white">
+        <h2>Заявка</h2>
+        <p>Для посещение нашего кудалыка потвердите свое присуствие на данном мероприятии</p>
+      </div>
+      <div class="content">
+        <div class="contactInfo">
+          <h3>Где находится</h3>
+          <div class="contactInfoBx">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="text">
+                <h3>Адресс</h3>
+                <p>The Friends Banquet Hall ,<br>Улица Манаса, 50,<br>Бостандыкский район, Алматы</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Телефон</h3>
+                <p>+77027997970</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>mirazhhi.1337@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="formBx">
+          <form action="" id="container-form">
+            <h3>ФИО</h3>
+            <input type="text" placeholder="Введите пожалуйста ваше полное ФИО">
+
+            <ul class="contact-list">
+              <li>
+                <input type="radio" id="fast" name="selector">
+                <label for="fast">Обязательно приду</label>
+                <div class="radiobutton"></div>
+              </li>
+              <li>
+                <input type="radio" id="medium" name="selector">
+                <label for="medium">Возможно приду</label>
+                <div class="radiobutton"></div>
+              </li>
+              <li>
+                <input type="radio" id="slow" name="selector">
+                <label for="slow">Не приду</label>
+                <div class="radiobutton"></div>
+              </li>
+            </ul>
+
+
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>Copyright © 2024 Mirazhhi. All Right Reserved.</p>
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      })
+
+      const toggleMenu = () => {
+        const menuToggle = document.querySelector('.toggle');
+        const menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+      }
+    </script>
+  </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--     <section class="services" id="services">
+      <div class="heading white">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon1.png" alt="">
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
+        </div>
+        <div class="servicesBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon2.png" alt="">
+          <h2>Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
+        </div>
+        <div class="servicesBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon3.png" alt="">
+          <h2>Android App</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
+        </div>
+        <div class="servicesBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon4.png" alt="">
+          <h2>Photography</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
+        </div>
+        <div class="servicesBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon5.png" alt="">
+          <h2>Content Writing</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
+        </div>
+        <div class="servicesBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon6.png" alt="">
+          <h2>Video Editing</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="heading">
+        <h2>Our Latest Work</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <div class="workBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product1.jpg" alt="">
+        </div>
+        <div class="workBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product2.jpg" alt="">
+        </div>
+        <div class="workBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product3.jpg" alt="">
+        </div>
+        <div class="workBx">
+          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product4.jpg" alt="">
+        </div>
+      </div>
+      <div class="heading">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+      <div class="heading">
+        <h2>Testimonial</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <div class="testimonialBx">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deserunt a consectetur, placeat esse perspiciatis natus nulla molestiae ea enim alias deleniti itaque eos accusamus saepe aut nihil fugit odit!</p>
+          <h3>Someone Famous<br><span>Creative Designer</span></h3>
+        </div>
+        <div class="testimonialBx">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deserunt a consectetur, placeat esse perspiciatis natus nulla molestiae ea enim alias deleniti itaque eos accusamus saepe aut nihil fugit odit!</p>
+          <h3>Someone Famous<br><span>Creative Designer</span></h3>
+        </div>
+      </div>
+    </section>
+ -->
