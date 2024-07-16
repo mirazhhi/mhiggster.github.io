@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M&D invitation | Created by Miras production</title>
-  <link rel="stylesheet" href="invite.css">
+  <link rel="stylesheet" href="style.css">
 
 
 <body>
@@ -86,23 +86,23 @@
           </div>
         </div>
         <div class="formBx">
-          <form action="" id="container-form">
+          <form action="http://194.39.65.28/plesk-site-preview/md.kz/https/194.39.65.28/generate.php" id="container-form" method="GET">
             <h3>Гость</h3>
-            <input type="text" placeholder="Введите пожалуйста ваше полное фио">
+            <input type="text" name="name" placeholder="Введите пожалуйста ваше полное фио">
 
             <ul class="contact-list">
               <li>
-                <input type="radio" id="fast" name="selector">
+                <input type="radio" id="fast" name="type">
                 <label for="fast">Обязательно приду</label>
                 <div class="radiobutton"></div>
               </li>
               <li>
-                <input type="radio" id="medium" name="selector">
+                <input type="radio" id="medium" name="type">
                 <label for="medium">Возможно приду</label>
                 <div class="radiobutton"></div>
               </li>
               <li>
-                <input type="radio" id="slow" name="selector">
+                <input type="radio" id="slow" name="type">
                 <label for="slow">Не приду</label>
                 <div class="radiobutton"></div>
               </li>
@@ -131,102 +131,48 @@
         menuToggle.classList.toggle('active');
         menu.classList.toggle('active');
       }
+
+
+
+      document.getElementById('container-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвратить стандартную отправку формы
+
+        const nameInput = document.querySelector('input[name="name"]');
+        const typeRadio = document.querySelector('input[name="type"]:checked');
+
+
+        console.log(nameInput, typeRadio)
+
+        const data = {
+          name: nameInput.value,
+          type: typeRadio.value
+        };
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://194.39.65.28/plesk-site-preview/md.kz/https/194.39.65.28/generate.php');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            // Обработать успешный ответ от сервера
+            console.log('Данные успешно отправлены!');
+          } else {
+            console.error('Ошибка при отправке данных:', xhr.statusText);
+          }
+        };
+
+        const encodedData = new URLSearchParams(data).toString();
+
+
+        console.log(encodedData)
+        
+
+
+        xhr.send(encodedData);
+      });
+
     </script>
   </body>
 
 
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--     <section class="services" id="services">
-      <div class="heading white">
-        <h2>Our Services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="content">
-        <div class="servicesBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon1.png" alt="">
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
-        </div>
-        <div class="servicesBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon2.png" alt="">
-          <h2>Web Development</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
-        </div>
-        <div class="servicesBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon3.png" alt="">
-          <h2>Android App</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
-        </div>
-        <div class="servicesBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon4.png" alt="">
-          <h2>Photography</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
-        </div>
-        <div class="servicesBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon5.png" alt="">
-          <h2>Content Writing</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
-        </div>
-        <div class="servicesBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/icon6.png" alt="">
-          <h2>Video Editing</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis totam eius rerum? Modi voluptates illum, incidunt molestias consectetur officia natus iure.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="work" id="work">
-      <div class="heading">
-        <h2>Our Latest Work</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="content">
-        <div class="workBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product1.jpg" alt="">
-        </div>
-        <div class="workBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product2.jpg" alt="">
-        </div>
-        <div class="workBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product3.jpg" alt="">
-        </div>
-        <div class="workBx">
-          <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/product4.jpg" alt="">
-        </div>
-      </div>
-      <div class="heading">
-        <a href="#" class="btn">View More</a>
-      </div>
-    </section>
-
-    <section class="testimonial" id="testimonial">
-      <div class="heading">
-        <h2>Testimonial</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="content">
-        <div class="testimonialBx">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deserunt a consectetur, placeat esse perspiciatis natus nulla molestiae ea enim alias deleniti itaque eos accusamus saepe aut nihil fugit odit!</p>
-          <h3>Someone Famous<br><span>Creative Designer</span></h3>
-        </div>
-        <div class="testimonialBx">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deserunt a consectetur, placeat esse perspiciatis natus nulla molestiae ea enim alias deleniti itaque eos accusamus saepe aut nihil fugit odit!</p>
-          <h3>Someone Famous<br><span>Creative Designer</span></h3>
-        </div>
-      </div>
-    </section>
- -->
