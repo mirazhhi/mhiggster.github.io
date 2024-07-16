@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&D шақыру | Miras production дайындады</title>
+  <link rel="stylesheet" href="style.css">
+
+
+<body>
+  <header>
+    <a href="#" class="logo">M&D шақыру</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home" onclick="toggleMenu();">Кіріспе</a></li>
+      <li><a href="#about" onclick="toggleMenu();">Біз туралы</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Бейімдеу</a></li>
+      <li><a href="#services" onclick="toggleMenu();">WIP</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="home">
+    <div class="textBx">
+      <h2>Сәлеметсіздер, біз <br><span>M&D Мирас және Дарига</span></h2>
+      <h3>Сізді құдалық тойымызға шақыруға құрмет көрсетеміз, ол <span class="date"><strong>14.09.2024</strong></span> күні өткізіледі</h3>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>Кім біз?</h2>
+    </div>
+    <div class="content">
+      <div class="contentBx w50">
+        <h3>Біз - Инновация</h3>
+        <p>
+          <strong>Мирас</strong>, Талдықорғаннан келген күйеу, дәмді тамақ ішуді, баскетбол ойнауды және эстет жолымен альтернативті сүтпен кофе ішуді жақсы көреді.
+          Мәнері жағынан - қатты, лауазымы бойынша ақпаратшы немесе халық арасында мейірімді түрде "<strong>Software Engineer</strong>" деп аталады.
+          Серке компанияның жанды рухы, жеңіл, ашық, әдекватты. 
+        </p>
+        <br>
+        <p><strong>Дарига</strong> - өткір ақыл-ойы мен терең ойыншылығы күлкісімен үйлесетін Қарағандыдан келген қалыңдық. Ол сән тенденциялары мен брендтерді жақсы біледі, бірақ эстеткаға бейім және барлық нәрсені жанпен жасайды. Сырт келбеті ғана емес, ішкі әлемі де керемет, Дарига сұлулық құдайымен де бәсекелесе алады. Сонымен қатар, ол плов пен самсаны шебер дайындайды, олардан көз алмайсыз!
+        <br><br></p>
+      </div>
+      <div class="w50">
+        <img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Personal%20Portfolio%20Website/img1.jpg" class="img">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+  <div class="heading white footer-head">
+    <h2>Құдалыққа заявка</h2>
+    <p>Құдалық тойымызға қатысу үшін бұл шараға өз келісімеңізді растаңыз</p>
+  </div>
+  <div class="content">
+    <div class="contactInfo">
+      <h3>Қайда орналасқан?</h3>
+      <div class="contactInfoBx">
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <div class="text">
+            <h3>Мекен-жай</h3>
+            <p>The Friends Banquet Hall ,<br>Манас көшесі, 50,<br>Бостандық ауданы, Алматы</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-phone"></i>
+          </div>
+          <div class="text">
+            <h3>Телефон</h3>
+            <p>+77027997970</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fa fa-envelope-o"></i>
+          </div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>mirazhhi.1337@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="formBx">
+      <form action="" id="container-form">
+        <h3>Коньық</h3>
+        <input type="text" placeholder="Тolu толық аты-жөніңізді енгізіңіз">
+
+        <ul class="contact-list">
+          <li>
+            <input type="radio" id="fast" name="selector">
+            <label for="fast">Мібяза келемін</label>
+            <div class="radiobutton"></div>
+          </li>
+          <li>
+            <input type="radio" id="medium" name="selector">
+            <label for="medium">Мүмкін келемін</label>
+            <div class="radiobutton"></div>
+          </li>
+          <li>
+            <input type="radio" id="slow" name="selector">
+            <label for="slow">Келмеймін</label>
+            <div class="radiobutton"></div>
+          </li>
+        </ul>
+
+
+        <input type="submit" value=" жіберу">
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="copyright">
+  <p>Барлық құқығы қорғалған © 2024 Mirazhhi.</p>
+</div>
+
+<script type="text/javascript">
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+  })
+
+  const toggleMenu = () => {
+    const menuToggle = document.querySelector('.toggle');
+    const menu = document.querySelector('.menu');
+    menuToggle.classList.toggle('active');
+    menu.classList.toggle('active');
+  }
+</script>
